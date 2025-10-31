@@ -1,0 +1,37 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "dmg/post-search",
+	"version": "1.2",
+	"title": "dmg Search Link",
+	"description": "DMG challenge, ouputs a read more link to a post",
+	"icon": "admin-links",
+	"category": "widgets",
+	"attributes": {        
+		"align":{
+			"type": "string",
+			"default": "full"
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": ""
+		},
+		"postId": {
+			"type": "number",
+			"default": 0
+		},
+		"postTitle": {
+			"type": "string",
+			"default": ""
+		},
+		"postUrl": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "dmg",
+	"editorScript": "file:./index.js"
+}
